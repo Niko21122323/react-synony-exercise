@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --textColor: hsl(249, 52%, 5%);
+  --backgroundColor: hsl(249, 53%, 90%);
+  --btnColor: hsl(172, 62%, 59%);
+  --accentColor: hsl(335, 85%, 53%);
+  --btn2Color: hsl(203, 62%, 96%);
+  --transition: 0.3s ease-in-out;
+}
+
+.app {
+  background-color: var(--btn2Color);
+  width: fit-content;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 50%;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 22px;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--btnColor);
+  transition: var(--transition);
+  color: var(--textColor);
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: var(--accentColor);
+  color: var(--btn2Color);
+}
+
+label {
+  cursor: pointer;
+  color: var(--textColor);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  border: none;
+  color: var(--textColor);
+  transition: var(--transition);
+  border: 3px solid transparent;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+input:focus {
+  border: 3px solid var(--btnColor);
+  outline: none;
+}
+
+ul {
+  display: grid;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  background-color: var(--backgroundColor);
+  transition: var(--transition);
+  color: var(--textColor);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+li:hover {
+  background-color: var(--accentColor);
+  color: var(--btn2Color);
+}
